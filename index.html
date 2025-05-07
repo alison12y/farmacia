@@ -1,46 +1,92 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="dist/img/favicon-32x32.png" type="image/png">
-    <title>Login - Farmacia</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="dist/style.css">
-    <link rel="stylesheet" type="text/css" href="dist/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="dist/img/favicon-32x32.png" type="image/png">
+  <title>Britmann </title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
 </head>
-<body>
-<img class="wave" src="dist/img/imagenn.png" alt="">
-<div class="contenedor">
-    <div class="img"></div>
-    <div class="contenido-login">
-        <form action="controlador/" method="post">
-            <img src="dist/img/logo.jpg" alt="">
-            <h2>FARMACIA BRITMANN</h2>
-            <div class="input-div dni">
-                <div class="i">
-                    <i class="fas fa-user"></i>
-                </div>
-                <div class="div">
-                    <h5>Usuario</h5>
-                    <input type="text" name="user" class="input" required>
-                </div>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="../../index2.html"><b>FARMACIA BRITMANN</b></a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body">
+      <p class="login-box-msg">Bienvenido al sistema de Farmacia Britmann</p>
+
+      <form action="../../index3.html" method="post">
+        <div class="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Usuario">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
             </div>
-            <div class="input-div pass">
-                <div class="i">
-                    <i class="fas fa-lock"></i>
-                </div>
-                <div class="div">
-                    <h5>Contraseña</h5>
-                    <input type="password" name="pass" class="input" required>
-                </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Contraseña">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
             </div>
-            <a href="vista/recuperar.php">Recuperar contraseña</a>
-            <a href="#">Crear cuenta</a>
-            <input type="submit" class="btn" value="Iniciar Sesión">
-        </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="remember">
+              <label for="remember">
+                Recordar Contraseña
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary btn-block">Iniciar</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+
+      <div class="social-auth-links text-center mb-3">
+        <p>- OR -</p>
+        <a href="#" class="btn btn-block btn-primary">
+          <i class="fab fa-facebook mr-2"></i> Iniciar Sesion con Facebook
+        </a>
+        <a href="#" class="btn btn-block btn-danger">
+          <i class="fab fa-google-plus mr-2"></i> Iniciar sesión con Google
+        </a>
+      </div>
+      <!-- /.social-auth-links -->
+
+      <p class="mb-1">
+        <a href="forgot-password.html">Recuperar Contraseña</a>
+      </p>
+      <p class="mb-0">
+        <a href="register.html" class="text-center">Registrar un nuevo Usuario</a>
+      </p>
     </div>
+    <!-- /.login-card-body -->
+  </div>
 </div>
-<script src="dist/js/index.js"></script>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
 </body>
 </html>

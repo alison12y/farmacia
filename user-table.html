@@ -9,9 +9,9 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -107,25 +107,13 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-      <!-- Sidebar user (optional) -->
+      <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="../dist/img/avatar.png" class="img-circle elevation-2" alt="User Image">
+          <img src="dist/img/avatar.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Nirvana Arias</a>
-        </div>
-      </div>
-
-      <!-- SidebarSearch Form -->
-      <div class="form-inline">
-        <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
-          </div>
         </div>
       </div>
 
@@ -134,8 +122,8 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item">
-            <a href="#" class="nav-link">
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 GESTION DE USUARIO
@@ -144,56 +132,42 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../../index.html" class="nav-link">
+                <a href="user-table.html" class="nav-link active">
                   <i class="fas fa-file-alt "></i>
-                  <p>DATOS PERSONALES</p>
+                  <p>Datos personales</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
+                <a href="user-register.html" class="nav-link active">
                   <i class="fas fa-user-plus"></i>
-                  <p>REGISTRAR USUARIO</p>
+                  <p>Registrar Usuarios</p>
                 </a>
               </li>
- 
             </ul>
           </li>
-
+          
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-box-open"></i>
               <p>
                 GESTION DE PRODUCTOS
                 <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">6</span>
+                <span class="badge badge-info right"></span>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../layout/top-nav.html" class="nav-link">
+                <a href="product-add.html" class="nav-link">
                   <i class="fas fa-user-plus"></i>
-                  <p>Registrar Producto</p>
+                  <p>Gestión de Registrar</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../layout/top-nav-sidebar.html" class="nav-link">
+                <a href="manage-product.html" class="nav-link">
                   <i class="fas fa-box"></i>
-                  <p>Editar Datos del Producto</p>
+                  <p>Operaciones de Registros</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="../layout/boxed.html" class="nav-link">
-                  <i class="fas fa-trash-alt"></i>
-                  <p>Eliminar Productos</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/fixed-sidebar.html" class="nav-link">
-                  <i class="fas fa-search"></i>
-                  <p>Consultas de Productos</p>
-                </a>
-              </li>
-              
             </ul>
           </li>
           <li class="nav-item">
@@ -206,35 +180,34 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../charts/chartjs.html" class="nav-link">
+                <a href="charts/chartjs.html" class="nav-link">
                   <i class="fas fa-user-plus"></i>
-                  <p>Registrar Ventas</p>
+                  <p>Registrar Proveedor</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../charts/flot.html" class="nav-link">
+                <a href="charts/flot.html" class="nav-link">
                   <i class="fas fa-box"></i>
-                  <p>Editar Ventas</p>
+                  <p>Editar Proveedor</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../charts/inline.html" class="nav-link">
+                <a href="charts/inline.html" class="nav-link">
                   <i class="fas fa-trash-alt"></i>
-                  <p>Eliminar Ventas</p>
+                  <p>Eliminar Proveedor</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../charts/uplot.html" class="nav-link">
+                <a href="charts/uplot.html" class="nav-link">
                   <i class="fas fa-search"></i>
-                  <p>Consultar Ventas</p>
+                  <p>Consultar Proveedores</p>
                 </a>
               </li>
             </ul>
           </li>
-          
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
+              <i class="nav-icon fas fa-notes-medical"></i>
               <p>
                 GESTION DE RECETAS MEDICAS
                 <i class="fas fa-angle-left right"></i>
@@ -242,31 +215,30 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../forms/general.html" class="nav-link">
+                <a href="UI/general.html" class="nav-link">
                   <i class="fas fa-user-plus"></i>
                   <p>Registrar Receta Medica</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../forms/advanced.html" class="nav-link">
+                <a href="pages/UI/icons.html" class="nav-link">
                   <i class="fas fa-notes-medical"></i>
-                  <p>Validar Receta Medica</p>
+                  <p>Validar Recetas Medicas</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../forms/editors.html" class="nav-link">
+                <a href="UI/buttons.html" class="nav-link">
                   <i class="fas fa-search"></i>
                   <p>Consultar Recetas</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../forms/validation.html" class="nav-link">
+                <a href="UI/sliders.html" class="nav-link">
                   <i class="fas fa-link"></i>
                   <p>Asociar Receta A Venta</p>
                 </a>
               </li>
-            </ul>
-          </li>
+
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-truck"></i>
@@ -277,42 +249,31 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../tables/simple.html" class="nav-link">
-                  <i class="fas fa-user-plus"></i>
-                  <p>Registrar Proveedores</p>
+                <a href="forms/general.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Registrar Proveedor</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../tables/data.html" class="nav-link">
-                  <i class="fas fa-edit"></i>
-                  <p>Editar  Proveedores</p>
+                <a href="forms/advanced.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Editar Proveedores</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../tables/data.html" class="nav-link">
-                  <i class="fas fa-trash-alt"></i>
-                  <p>Eliminar Proveedores</p>
+                <a href="forms/editors.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Eliminar Proveedor</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../tables/jsgrid.html" class="nav-link">
-                  <i class="fas fa-search"></i>
+                <a href="forms/validation.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
                   <p>Consultar Proveedor</p>
                 </a>
               </li>
             </ul>
           </li>
-          <li class="nav-header">EXAMPLES</li>
-          <li class="nav-item">
-            <a href="../calendar.html" class="nav-link">
-              <i class="nav-icon far fa-bell text-danger"></i>
-              <p>
-                Alerta De Productos
-                <span class="badge badge-info right">2</span>
-              </p>
-            </a>
-          </li>
-
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-shopping-bag"></i>
@@ -323,52 +284,104 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../mailbox/mailbox.html" class="nav-link">
-                  <i class="fas fa-user-plus"></i>
+                <a href="tables/simple.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
                   <p>Registrar Compra</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../mailbox/compose.html" class="nav-link">
-                  <i class="fas fa-search"></i>
-                  <p>Consultar Compra</p>
+                <a href="tables/data.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Consultar Compras</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../mailbox/read-mail.html" class="nav-link">
-                  <i class="fas fa-sync-alt"></i>
-                  <p>Actualizar Stock al Comprar</p>
+                <a href="tables/jsgrid.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Actualiza Stock al Comprar</p>
                 </a>
               </li>
             </ul>
           </li>
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-book"></i>
+          <li class="nav-item">
+            <a href="calendar.html" class="nav-link">
+              <i class="nav-icon far fa-bell text-danger"></i>
               <p>
-                GESTION DE CLIENTES
+                Alertas De Productos
+                <span class="badge badge-info right">2</span>
+              </p>
+            </a>
+          </li>
+         
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa- fa-id-card"></i>
+              <p>
+                GESTION DE Clientes
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../examples/invoice.html" class="nav-link">
-                  <i class="fas fa-user-plus"></i>
+                <a href="mailbox/mailbox.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
                   <p>Registrar Cliente</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../examples/profile.html" class="nav-link">
-                  <i class="fas fa-edit"></i>
+                <a href="mailbox/compose.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
                   <p>Editar Cliente</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../examples/e-commerce.html" class="nav-link">
-                  <i class="fas fa-search"></i>
-                  <p>Consultar Cliente</p>
+                <a href="mailbox/read-mail.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Consultar Clientes</p>
                 </a>
               </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-chart-line"></i>
+              <p>
+                GESTION DE REPORTES
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="examples/invoice.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Generar Reporte de Ventas</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="examples/profile.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Generar Reporte de Compras</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="examples/e-commerce.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Generar Reporte de Productos Mas Vendidos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="examples/projects.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Generar Reporte De Inventario</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="examples/project-add.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Generar Reporte De Ganancia</p>
+                </a>
+              </li>
+
 
             </ul>
           </li>
@@ -376,103 +389,151 @@
             <a href="#" class="nav-link">
               <i class="nav-icon far fa-plus-square"></i>
               <p>
-                ....
+                Extras
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="nav-icon fas fa-book"></i>
                   <p>
-                    GESTION DE REPORTES
+                    Gestion De Bitacora
                     <i class="fas fa-angle-left right"></i>
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="../examples/login.html" class="nav-link">
+                    <a href="examples/login.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Generar Reporte De Ventas</p>
+                      <p>Registrar Actividad de Usuario</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="../examples/register.html" class="nav-link">
+                    <a href="examples/register.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Generar Reporte De Compras</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../examples/forgot-password.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Generar Reportes De Productos Mas Vendidos</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../examples/recover-password.html" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Generar Reporte De Inventario</p>
-                    </a>
-                    <li class="nav-item">
-                      <a href="../examples/recover-password.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Generar Reporte De Ganancia</p>
-                      </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>
-                    GESTION DE BITACORA
-                    <i class="fas fa-angle-left right"></i>
-                  </p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="../examples/login-v2.html" class="nav-link">
-                      <i class="fas fa-user-plus"></i>
-                      <p>Regisrar Actividad De Usuario</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../examples/register-v2.html" class="nav-link">
-                      <i class="fas fa-search"></i>
                       <p>Consultar Bitacora</p>
                     </a>
                   </li>
-            
+         
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-warehouse"></i>
+                  <p>
+                    GESTION DE INVENTARIO
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="examples/login-v2.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Agregar Producto al Inventario</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="examples/register-v2.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Modificar Producto al Inventario</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="examples/forgot-password-v2.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Eliminar Producto Del Inventario</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="examples/recover-password-v2.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Registrar Entradas De Producto</p>
+                    </a>
+                  </li>
                 </ul>
               </li>
-           
-              </li>
-
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-warehouse"></i>
-              <p>
-                GESTION DE INVENTARIO
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
+      
               <li class="nav-item">
-                <a href="../search/simple.html" class="nav-link">
+                <a href="examples/language-menu.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Stock Bajo</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../search/enhanced.html" class="nav-link">
+                <a href="examples/404.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Control De Fecha De Caducidad</p>
                 </a>
               </li>
+                
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="search/simple.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Simple Search</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="search/enhanced.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Enhanced</p>
+                </a>
+              </li>
             </ul>
           </li>
+          
+          <li class="nav-item">
+            
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Level 2</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>
+                    Level 2
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>Level 3</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>Level 3</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <i class="far fa-dot-circle nav-icon"></i>
+                      <p>Level 3</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Level 2</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+      
+          
+          
           
         </ul>
       </nav>
@@ -492,7 +553,7 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="dashboard.html">Incio</a></li>
               <li class="breadcrumb-item active">Tablero Usuario</li>
             </ol>
           </div>
